@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Assist</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="left-section">
+      <img src="logo.png" alt="Farm Assist Logo" class="logo">
+      <span class="welcome">Hello, <strong id="userName">Ramu</strong></span>
+      <span class="location">
+        <i class="fas fa-map-marker-alt"></i> <span id="userLocation">Palakkad</span>
+      </span>
+    </div>
+
+    <div class="right-section">
+      <div class="profile-label">Profile</div>
+      <div class="profile-container">
+        <img src="profile.png" alt="Profile" class="profile-pic" id="profileBtn">
+        <div class="profile-popup" id="profilePopup">
+          <p><strong>Name:</strong> Ramu</p>
+          <p><strong>Queries Asked:</strong> 5</p>
+          <p><strong>Points Earned:</strong> 120</p>
+          <p><strong>Crop:</strong> Wheat</p>
+        </div>
+      </div>
+      <a href="land.html" class="logout-btn">Logout</a>
+    </div>
+  </header>
+
+<!-- <section class="wavy-bg">
+  
+</section> -->
+
+<section class="wavy-section">
+  <div class="wavy-bg">
+    <!-- Use flex inside the background -->
+    <div class="wavy-content">
+      <div class="wavy-text">
+        <h1>AI That Speaks Farmer</h1>
+        <p>Ask any question about your crops, pests, weather, or farm care, and get instant advice from our smart AI assistant</p>
+        
+      </div>
+
+      <div class="wavy-image"></div>
+    </div>
+  </div>
+</section>
+
+
+  <script src="dashboard.js" defer></script>
+</body>
+</html>

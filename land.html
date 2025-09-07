@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farm Assist</title>
+  <link rel="stylesheet" href="land.css">
+</head>
+<body>
+  <!-- Fullscreen Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="https://v1.pinimg.com/videos/mc/720p/49/b6/77/49b6774e53615eaad5cc2d816e4658ba.mp4" type="video/mp4">
+   
+  </video>
+
+  <div class="container">
+    <div class="logo-section">
+      <img src="logo.png" alt="Farm Assist Logo" class="logo">
+    </div>
+
+    <div class="card">
+      <h2>Welcome to Farm Assist</h2>
+      <p>Choose your language and location to get started.</p>
+
+      <div class="options">
+        <label for="language">Choose Language:</label>
+        <select id="language">
+          <option value="english">English</option>
+          <option value="hindi">Hindi</option>
+          <option value="bengali">Bengali</option>
+          <option value="marathi">Marathi</option>
+          <option value="malayalam">Malayalam</option>
+        </select>
+
+        <label for="location">Select Location:</label>
+        <select id="location">
+          <option value="">-- Select your region --</option>
+          <option value="maharashtra">Maharashtra</option>
+          <option value="punjab">Punjab</option>
+          <option value="kerala">Kerala</option>
+          <option value="tamilnadu">Tamil Nadu</option>
+        </select>
+
+        <button onclick="getLocation()">Use Live Location</button>
+        <div id="liveLocation"></div>
+      </div>
+
+      <button class="cta-btn"><a href="index.html">Get Started</a></button>
+    </div>
+  </div>
+  <script src="land.js"></script>
+</body>
+</html>
